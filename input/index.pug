@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Horario.
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="style.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous")
+    script(src="Main.js")
+  body
+    h1 Horario automatica.
+    //- Contenedor principal
+    section.container
+      - for (var rows = 0; rows < 15; rows++)
+        //- Las filas representan -> Nombre empleado 
+        div.row
+          input(type="text" placeholder="Nombre Empleado." value="" ).element.inputs-texts
+          //- Etiqueta de opciones de despliegue
+          //select.selectHours.element
+            //option(value="" selected) seleciona. 
+            //- Generar con un ciclo las horas de entrada
+            //- for(var hour=9;hour<12;hour++)
+              //  if hour < 10
+                //  option(value="0"+hour+":00" ).hourOpt 0#{hour}:00
+                //else
+                  //option(value=hour+":00" ).hourOpt #{hour}:00
+    //- Contenedor de los bontes Gnerar - limpiar.
+    section.container.buttons
+      a(href="#").button.generar#buttonGenerar Generar.
+      a(href="").button.delete limpiar.
+      a(href="#").button.delete#gurdar guardar.
+    section.container#tables  

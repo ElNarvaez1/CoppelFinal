@@ -1,0 +1,99 @@
+// Fuente externa.
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700&display=swap');
+
+//-------------------Estilos generales-----------------------//
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background:#fff;
+  width: 100vw;
+}
+h1{
+  text-align: center;
+  margin: 25px;
+}
+h2{
+  margin: 25px 25px 25px 0px;
+}
+input,
+select,
+p{
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  font-weight: 400;
+}
+p{
+  display: flex;
+  width: 100%;
+  text-align: left;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+td,th{
+  padding: 20px 10px;
+}
+td{
+  border-bottom: 1px solid rgba(10,10,10,0.1);
+}
+th{
+  // padding: 20px 10px;
+  background: #2b5ea0;
+  color: #fff;
+}
+//-------------------Estilos de diseño-----------------------//
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding:20px;
+}
+.row{
+  display: flex;
+  width: calc(50% - 15px);
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(100,100,100,0.1);
+}
+.error{
+  border: 2px solid rgba(red,0.5);
+  border-radius: 7px;
+}
+// No usado
+.element{
+  flex-grow: 1;
+  background: none;
+}
+// .buttons{
+//   display: flex;
+//   justify-content: space-between;
+// }
+.button{
+  width: calc(33% - 15px);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  line-height: 19px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.button.generar{
+  background: #2b5ea0;
+  color: white;
+  font-weight: bold;
+}
+.delete{
+  color: black;
+}

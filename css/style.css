@@ -1,0 +1,50 @@
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  width: calc(50% - 15px);
+  padding: 10px 5px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+}
+
+.error {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  border-radius: 7px;
+}
+
+.element {
+  flex-grow: 1;
+  background: none;
+}
+
+.button {
+  width: calc(33% - 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  line-height: 19px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.button.generar {
+  background: #2b5ea0;
+  color: white;
+  font-weight: bold;
+}
+
+.delete {
+  color: black;
+}
